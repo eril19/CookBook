@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Offside">
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container head">
+            <div class="navheader">
+                <div class="nav dropdown">
+                    <a onclick="clicked()" class="lang">LANGUAGE 🞃</a>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="./register2.html">Bahasa</a>
+                        <a href="./register.html">English</a>
+                    </div>
+                </div>
+                <div class="nav logo">
+                    <a href="./index.html"><h2>CookBook</h2></a>
+                </div>
+                <div class="nav double">
+                    <div class="login">
+                        <a id="openModal">LOG IN</a>
+                    </div>
+                    <div class="reg" id="openReg">
+                        <a href="./register.html">
+                            REGISTER
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <form method="post" id="form-insert">
+        <div class="title" >
+            <h2>Sign Up</h2>
+            <p>
+                It only takes a few minutes!
+            </p>
+            <br>
+        </div>
+        <div class="name">
+            <div class="text">
+                Username
+            </div>
+            <div class="component">
+                <input type="text" name="name" id="username">
+            </div>
+        </div>
+
+        <div class="email">
+            <div class="text">
+                Email
+            </div>
+            <div class="component">
+                <input type="email" name="email" id="email">
+            </div>
+
+        </div>
+        
+        <div class="gender">
+            <div class="text">
+                Gender
+            </div>
+            <div class="component">
+                <input type="radio" name="gender" value="Male" id="male">Male
+                <input type="radio" name="gender" value="Female" id="female">Female
+            </div>
+        </div>
+
+        <div class="pass">
+            <div class="text">
+                Password
+            </div>
+            <div class="component">
+                <input type="password" id="password">
+            </div>
+        </div>
+
+        <div class="pass2">
+            <div class="text">
+                Confirm Password
+            </div>
+            <div class="component">
+                <input type="password" id="confirm">
+            </div>
+        </div>
+
+        <div class="type">
+            <div class="text">
+                Account type
+            </div>
+            <div class="component">
+                <select name="type" >
+                    <option value="guest">Guest</option>
+                    <option value="admin">Admin</option>
+                    <option value="premium">Premium User</option>
+                    
+                </select>
+            </div>
+        </div>
+
+        <div class="term">
+            <input type="checkbox" name="check" id="term"> 
+            Agree Terms & Condition
+        </div>
+
+        <div class="submit">
+           
+                <button type="submit" >Register</button>
+          
+        </div>
+        <div class="ask">
+            Already have an account?
+            <a href="./login.html">LOG IN</a>
+        </div>
+        
+    </form>
+
+    <footer>
+        <div class="container foot">
+            <div class="footerinside">
+                <div class="logo">
+                    <h3>CookBook</h3>
+                </div>
+                <div>
+                    © 2021 CookBook, Inc.
+                </div>
+            </div>
+            <div class="footerinside2">
+                    <div class="right1">
+                        <div class="list1">
+                            
+                            <ul>
+                                <li><h3>Services</h3></li>
+                                <li>About Us</li>
+                                <li>Contact Us</li>
+                                <li>Customer Service</li>
+                                <li>FAQ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right2">
+                        <div class="list2">
+                            
+                            <ul>
+                                <li><h3>Social Media</h3></li>
+                                <li>Instagram</li>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+    <script src="./validation.js"></script>
+</body>
+</html>
